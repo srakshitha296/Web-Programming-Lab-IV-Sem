@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        
+        <script>
+            /* Script for calculator  */
+            function operation(op){
+                var n1 = parseInt(document.getElementById("num1").value);
+                var n2 = parseInt(document.getElementById("num2").value);
+                var result = 0;
+                if( op == "+")
+                result = n1+n2;
+                else if (op == "-")
+                    result = n1 - n2;
+                else if (op == "*")
+                    result = n1 * n2;
+                else
+                    result = n1/n2;
+            document.getElementById("result").value = result
+            }
+            /*     function for generating fibonacci numbers  */
+            function fib(){
+                var fib1 = 0, fib2 = 1, fib = 0;
+                var n = prompt("Enter a  number : ");
+                document.write("<h1>Fibonacci Series<h1>");
+                document.write("<h2>" + fib1 + "<h2>");
+                document.write("<h2>" + fib2 + "<h2>");
+                    for(i=3; i<=n; i++){
+                        fib = fib1 + fib2;
+                        fib1 = fib2;
+                        fib2 = fib;
+                document.write("<h2>" + fib + "<h2>"); 
+                }
+            }
+
+            /*   Calculate sum of n numbers */
+            function sum(){
+                var sum=0, n;
+                n = parseInt(document.getElementById("num").value);
+                for(i=0; i<=n; i++){
+                    sum += i;
+                }
+                document.getElementById("sum").value = sum;
+            }
+            /*  Validates usn and semister */
+            function validate(){
+                var patternusn = /^[1-4][A-Z]{2}\d{2}[A-Z]{2}\d{3}$/;
+                 var patternsem = /^[1-8]$/;
+                var sem = document.getElementById("sem").value;
+                var usn = document.getElementById("usn").value;
+                if(!patternsem.test(sem)){
+                    alert("Invalid sem");
+                }
+                else
+                {
+                    alert("Valid sem");
+                }
+
+                    if (!patternusn.test(usn)){
+                    alert("Invalid usn");
+                    }
+                else{
+                    alert("Valid usn");
+                }
+            }
+            /*     string   */
+            function string_Operation(){
+                var str = prompt("Enter the string");
+                var i=0;
+                if(isNaN(str)){
+                    for(i=0; i<str.length; i++){
+                    var chr = str.charAt(i);
+                    if(chr == 'A'|| chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U' || chr == 'a' || chr == 'e' || chr == 'i' || chr == 'o' || chr == 'u' ){
+                        break;
+                    }
+                }
+                if(i<str.length)
+                alert("Position of left most vowel is "+(i+1));
+            else
+            alert("No vowel found.")
+            }else{
+                var num, rem, rev=0;
+                num = parseInt(str);
+                while(num!=0){
+                    rem = num%10;
+                    rev = parseInt(num/10);
+                    rev = rev*10 + rem;
+                }
+                alert("Reverse of String is "+rev);
+            }
+        }
+        </script>
+    </head>
+    <body onload="string_Operation();">
+        <!--  4. Faculty List -->
+        <div>
+            <h1>A J INSTITUTE OF ENGINEERING AND TECHNOLOGY</h1>
+            <h2>Branch and Faculty</h2>
+            <ol>
+                <li>CSE
+                    <ul class="designation">
+                        <li>Professor
+                            <ol class="facultyName">
+                                <li>Dr.Antony P J <span>(BE ,Mtech, Phd)</span></li>
+                            </ol>
+                        </li>
+                        <li>Assistant Professor
+                            <ol start="2" class="facultyName">
+                                <li>Dr. Laxmi Gullappagol <span>(BE, MTech, PhD)</span></li>
+                                <li>Dr Chanchal Antony <span>(BE, MTech, PhD)</span></li>
+                            </ol>
+                        </li>
+                        <li>Associate Professor
+                            <ol start="4" class="facultyName">
+                                <li>Dr. Laxmi Gullappagol <span>(BE, MTech, PhD)</span></li>
+                                <li>Dr Chanchal Antony <span>(BE, MTech, PhD)</span></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                <li>ISE
+                    <ul class="designation">
+                        <li>Professor
+                            <ol class="facultyName">
+                                <li>Dr.Antony P J <span>(BE ,Mtech, Phd)</span></li>
+                            </ol>
+                        </li>
+                        <li>Assistant Professor
+                            <ol start="2" class="facultyName">
+                                <li>Dr. Laxmi Gullappagol <span>(BE, MTech, PhD)</span></li>
+                                <li>Dr Chanchal Antony <span>(BE, MTech, PhD)</span></li>
+                            </ol>
+                        </li>
+                        <li>Associate Professor
+                            <ol start="4" class="facultyName">
+                                <li>Dr. Laxmi Gullappagol <span>(BE, MTech, PhD)</span></li>
+                                <li>Dr Chanchal Antony <span>(BE, MTech, PhD)</span></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                <li>ECE
+                    <ul class="designation">
+                        <li>Professor
+                            <ol class="facultyName">
+                                <li>Dr.Antony P J <span>(BE ,Mtech, Phd)</span></li>
+                            </ol>
+                        </li>
+                        <li>Assistant Professor
+                            <ol start="2" class="facultyName">
+                                <li>Dr. Laxmi Gullappagol <span>(BE, MTech, PhD)</span></li>
+                                <li>Dr Chanchal Antony <span>(BE, MTech, PhD)</span></li>
+                            </ol>
+                        </li>
+                        <li>Associate Professor
+                            <ol start="4" class="facultyName">
+                                <li>Dr. Laxmi Gullappagol <span>(BE, MTech, PhD)</span></li>
+                                <li>Dr Chanchal Antony <span>(BE, MTech, PhD)</span></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+<!--  5. Calculator -->
+        <div>
+            <div class="calculator">
+                <h1>CALCULATOR</h1>
+                <table>
+                    <tr>
+                        <td><label for="num1">Enter first Number :</label></td>
+                        <td><input type="number" id="num1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="num2">Enter second Number :</label></td>
+                        <td><input type="number" id="num2"></td>
+                    </tr>
+                    <tr>
+                        <td text-align="center"></td>
+                        <td><input type="button" value="+" onclick="operation(this.value)";><input type="button" value="-" onclick="operation(this.value)";>
+                        <input type="button" value="*" onclick="operation(this.value)";><input type="button" value="/" onclick="operation(this.value)";></td>
+                    </tr>
+                    <td><label for="result">Result:</label></td>
+                    <td><input type="number" id="result"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 6b. Sum of N numbers -->
+        <div>
+            <div class="calculator">
+                <h1>Sum of N numbers</h1>
+                <table>
+                    <tr>
+                        <td><label for="num">Enter a number:
+                    </label></td>
+                        <td><input type="number" id="num"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sum">Result : </label></td>
+                        <td><input type="number" id="sum"></td>
+                    </tr>
+                    <tr><td colspan="2"
+                        align="center"><input type="button" value="calculate" onclick="sum()";></td></tr>
+                </table>
+            </div>
+        </div>
+        <!--      Squares and Cubes     -->
+        <div>
+            <div class="calculator">
+            <h1>Squares and Cubes</h1>
+            <table border="10" align="center">
+                <tr>
+                    <th>Number</th>
+                    <th>Square</th>
+                    <th>Cube</th>
+                </tr>
+                <script>
+                    for(i=0; i<=10; i++){
+                        document.write("<tr><td>"+i+"</td><td>"+i*i+"</td><td>"+i*i*i+"</td></tr>")
+                    }
+                </script>
+            </table>
+        </div>
+        </div>
+        <!--    validate  -->
+        <div>
+            <div class="calculator">
+                <h1>VALIDATION</h1>
+                <table>
+                    <tr>
+                        <td><label for="name"> Name : </label></td>
+                        <td><input id="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sem"> sem : </label></td>
+                        <td><input id="sem"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="usn"> USN : </label></td>
+                        <td><input id="usn"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><input type="button" value="validate" onclick="validate();"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

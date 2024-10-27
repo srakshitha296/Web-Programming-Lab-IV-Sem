@@ -1,0 +1,40 @@
+<!--  program 8-->
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <script>
+        function String_Operation()
+        {
+            var str = prompt("Enter the Input : ");
+            var i = 0;
+            if(isNaN(str))
+            {
+                for(i=0; i<str.length; i++)
+                {
+                    var chr = str.charAt(i);
+                    if(chr=='A'|| chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U' || chr == 'a' || chr == 'e' || chr == 'i' || chr == 'o' || chr == 'u' ){
+                    break;
+                    }
+                }
+                if(i<str.length)
+                    alert("Position of left most vowel is "+(i+1));
+                else
+                    alert("No vowel found");
+            }else{
+                var num, rev = 0, remainder;
+                num = parseInt(str);
+                while(num!=0)
+                {
+                    remainder = num%10;
+                    num = parseInt(num/10);
+                    rev = rev*10+remainder;
+                }
+                alert("Reverse of string is "+rev);
+            }
+        }
+          </script>
+</head>
+<body onload="String_Operation();">
+    
+</body>
+</html>

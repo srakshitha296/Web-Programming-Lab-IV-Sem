@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Fibonacci Series</title>
+    <script>
+        function fib(){
+            var fib1 = 0, fib2 = 1, fib = 0; 
+            var n = prompt("Enter Value of n");
+            document.write("<h2>Fibonacci Series is : </h2>");
+            document.write("<h2>"+fib1+"\t</h2>");
+            document.write("<h2>"+fib2+"\t</h2>");
+                for(i=3; i<=n; i++){
+                    fib = fib1+fib2;
+                    fib1 = fib2;
+                    fib2 = fib;
+                    document.write("<h2>"+fib+"\t</h2>");
+                }
+        }
+    </script>
+</head>
+<body onload = fib()>
+   <h1>FIBONACCI SERIES</h1>
+</body>
+</html>

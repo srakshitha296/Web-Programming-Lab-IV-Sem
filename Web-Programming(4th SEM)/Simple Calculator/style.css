@@ -1,0 +1,23 @@
+body{
+    background-color: purple;
+    margin: 10%;
+}
+
+div{
+    width: 40%;
+    margin-top: 15%;
+    margin-left:  25%;
+    padding:5%;
+    border: 2px ;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+}
+table{
+   margin-left: 18%;
+}
+p{
+    color:white;
+    text-align: right;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Employment Registration Form</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div>
+		<h1>Employment Registration Form</h1>
+		<form>
+			<table>
+				<tr>
+					<td><label for="name">Canditate Name : </label></td>
+					<td><input type="text" id="name" placeholder="Name" size="20px"  required></td>
+				</tr>
+				
+				<tr>	
+					<td><label for="mail">Email ID : </label></td>
+					<td><input type="email" id="mail" placeholder="abc@gmail.com" size="20px" required></td>
+				</tr>
+				
+				<tr>
+					<td><label for="gender">Gender : </label></td>
+					<td>
+						<input type="radio" name="gender">Male
+						<input type="radio" name="gender">Female
+					</td>
+				</tr>
+				
+				<tr>	
+					<td><label for="dob">Date of Birth : </label></td>
+					<td><input type="date" id="dob" required></td>
+				</tr>
+				
+				<tr>	
+					<td><label for="doj">Date of Joining : </label></td>
+					<td><input type="date" id="doj" required></td>
+				</tr>
+				
+				<tr>
+					<td><label for="address">Address : </label></td>
+					<td><textarea cols="20" rows="3" id="address"></textarea></td>
+				</tr>
+				
+				<tr>
+					<td><label>Educational Qualification : </label></td>
+					<td>
+						<select>
+							<option>SSLC</option>
+							<option>PUC</option>
+							<option>B.Tech</option>
+							<option>M.Tech</option>
+							<option>Phd</option>
+						</select>
+					</td>
+				<tr>
+				
+				<tr>
+					<td><label>Experience : </label></td>
+					<td>
+						<select>
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5+</option>
+						</select>
+					</td>
+				<tr>
+				
+				<tr>
+					<td><label for="phone">Contact Number : </label></td>
+					<td><input type="tel" id="phine" value="+91"  size="10px"></td>
+				</tr>
+				
+				<tr>
+				<td><label for="skills">Skills : </label></td>
+				<td>
+					<input type="checkbox" id="skills">Web Development
+					<input type="checkbox" id="skills">IOT<br>
+					<input type="checkbox" id="skills">Artificial Intelligence
+					<input type="checkbox" id="skills">Data Science<br>
+					<input type="checkbox" id="skills">Cyber Security</td>
+				</tr>
+				
+				<tr>
+					<td><label for="file">Upload Resume : </label></td>
+					<td><input type="file" id="file" required></td>
+				</tr>
+			</table>
+			<center><input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+			</center>
+		</form>
+		</div>
+	</body>
+</html>

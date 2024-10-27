@@ -1,0 +1,48 @@
+body{
+	width:90%;
+	margin:50px;
+	padding:20px;
+}
+
+h1{
+	text-align:center;
+	color:purple;
+	background-color:lavender;
+	font-size:60px;
+}
+h2{
+	text-align:center;
+	color:teal;
+	background-color:lavender;
+	font-size: 50px;
+}
+
+.branchName{
+	list-style-type:upper-roman;
+	color:purple;
+	font-weight:bold;
+}
+
+.facCategory{
+	color:black;
+	background-color:lavender;
+	margin:1%;
+	padding:2%;
+	width:90%;
+}
+
+span{
+	font-size:10px;
+	color:purple;
+}
+
+.facCategory li ol li{
+	color:teal;
+}
+
+.branchName li{
+	font-size: 30px;;
+}
+.facCategory li{
+	font-size: 20px;
+}

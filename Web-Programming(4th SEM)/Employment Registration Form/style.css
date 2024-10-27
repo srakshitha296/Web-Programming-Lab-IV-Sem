@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+
+div {
+    width: 700px;
+    margin: 10 auto;
+    background-color: lavender;
+    padding: 20px;
+}
+
+table {
+    border-spacing: 10px;
+}
+
+h1,
+table {
+    margin-left: 20%;
+}

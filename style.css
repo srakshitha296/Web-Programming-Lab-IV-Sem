@@ -1,0 +1,19 @@
+header {
+    height: 100px;
+    padding: 10px;
+}
+
+.nav{
+    padding: 5px;
+}
+
+h1{
+    font-size: 40px;
+    color: purple;
+
+}
+
+.hi {
+    display: inline-flex;
+    
+}

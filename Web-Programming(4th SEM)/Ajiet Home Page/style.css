@@ -1,0 +1,28 @@
+body{
+    background-color: lavender;
+}
+h1{
+    font-size: 50px;
+    background-color: lavender;
+    color: purple;
+}
+div{
+    border:10px solid plum;
+    margin: 100px;
+    padding: 50px;
+    color:purple;
+    border-radius: 30px;
+}
+
+h2, a{
+    color:purple;
+}
+
+button{
+    background-color: purple;
+    color:lavender;
+    height:30px;
+    width: 100px;
+    border: 0px;
+    border-radius: 50px;
+}

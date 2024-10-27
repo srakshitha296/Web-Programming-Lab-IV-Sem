@@ -1,0 +1,47 @@
+/*   Faculty List  */
+body{
+    margin: 20%;
+    margin-top: 5%;
+}
+
+div{
+    background-color: black;
+    width: 900px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+div h1, h2{
+    text-align: center;
+}
+
+.designation{
+    background-color: white;
+    color: black;
+    padding: 30px;
+    width: 700px;
+    margin: 10px;
+    
+}
+
+.facultyName{
+    color: purple;
+}
+
+.facultyName span{
+    font-size: 10px;
+    color:brown
+}
+
+
+/*  Simple Calculator  */
+.calculator{
+    margin: 10%;
+    padding: 10px;
+    background-color: grey;
+    width: 700px;
+}
+
+table{
+margin-left: 20%;
+}
